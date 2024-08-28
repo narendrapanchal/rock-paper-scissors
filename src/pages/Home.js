@@ -1,6 +1,4 @@
 import styles from "../scss/Home.module.scss";
-import { Link } from "react-router-dom";
-import { getAuthTokenFromCookie, getRoleFromCookie } from "../helpers/getToken";
 import React, { useState } from 'react';
 import Scoreboard from "../components/Scoreboard";
 import Result from "../components/Result";
@@ -14,10 +12,7 @@ const Home = () => {
   const [wins, setWins] = useState(0);
   const [losses, setLosses] = useState(0);
   const [draws, setDraws] = useState(0);
-  let token=getAuthTokenFromCookie();
-  if(!(token&&token.length)){
-    return <><h2>Kindly go through the header.</h2><Link to={"/login"}>Login</Link></>
-  }
+
   const handleChoice = (choice) => {
     const computerSelection = choices[Math.floor(Math.random() * choices.length)];
     setUserChoice(choice);
