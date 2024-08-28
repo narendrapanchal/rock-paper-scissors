@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import styles from "../scss/Signup.module.scss";
+import "../css/Signup.css";
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -52,7 +52,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className={styles.signup}>
+    <div className={"signup"}>
       <h2>User Signup</h2>
       <form onSubmit={handleSubmit}>
         <div>

@@ -1,4 +1,4 @@
-import styles from "../scss/Home.module.scss";
+import "../css/Home.css";
 import React, { useState } from 'react';
 import Scoreboard from "../components/Scoreboard";
 import Result from "../components/Result";
@@ -49,7 +49,7 @@ const Home = () => {
   const capitalize = (word) => word.charAt(0).toUpperCase() + word.slice(1);
 
   return (
-    <div className={styles.home}>
+    <div className={"home"}>
     
     <div className="game-container">
       <h1>Rock, Paper, Scissors</h1>

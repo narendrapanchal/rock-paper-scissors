@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import styles from "../scss/Login.module.scss";
+import "../css/Login.css";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -56,7 +56,7 @@ const Login = () => {
   };
 
   return (
-    <div className={styles.login}>
+    <div className={"login"}>
       <h2>User Login</h2>
       <form onSubmit={handleLogin}>
         <div>

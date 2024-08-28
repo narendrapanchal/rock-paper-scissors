@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 16px;
+}
+
+.header > div {
+  display: flex;
+  grid-gap: 10px;
+}
+
+.header > div > a {
+  font-size: 16px;
+  color: black;
+}
+
+.header > div > a:visited {
+  color: black;
+}
